@@ -1,0 +1,39 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/path/to/jdk-8"
+    },
+    {
+      "name": "JavaSE-11",
+      "path": "/path/to/jdk-11"
+    },
+    {
+      "name": "JavaSE-14",
+      "path": "/path/to/jdk-14",
+      "default": true
+    }
+  ],
+
+  "version": "0.2.0",
+
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Java Debug (Launch)",
+      "request": "launch",
+      "mainClass": "QuickStart",
+      "console": "internalConsole"
+    },
+    {
+      "name": "Python Debug",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "internalConsole"
+    }
+  ]
+}

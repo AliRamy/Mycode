@@ -1,0 +1,42 @@
+{
+  "python.pythonPath": "/usr/local/bin/python3",
+  "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript"],
+  "editor.fontSize": 18,
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.nodePath": "/Users/aliramy/.nvm/versions/node/v15.0.1/bin/node",
+  "C_Cpp.errorSquiggles": "Disabled",
+  "editor.fontFamily": "FiraMono Nerd Font,Menlo,Consolas,Operator Mono, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'FiraMono Nerd Font','Meslo LG L DZ for Powerline', 'Inconsolata for Powerline', monospace",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "editor.snippetSuggestions": "top",
+  "editor.tokenColorCustomizations": {
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.glyphMargin": true,
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "editor.formatOnSave": true,
+    "prettier.eslintIntegration": true,
+    "eslint.run": "onType",
+    "workbench.fontAliasing": "auto",
+    "terminal.integrated.macOptionIsMeta": true,
+    "workbench.statusBar.feedback.visible": false,
+    "editor.semanticHighlighting.enabled": false,
+    "highlight-matching-tag.styles": {
+      "opening": {
+        "full": {
+          "highlight": "rgba(165, 153, 233, 0.3)"
+        }
+      }
+    },
+    "importCost.largePackageColor": "#EC3A37F5",
+    "importCost.mediumPackageColor": "#B362FF",
+    "importCost.smallPackageColor": "#B362FF"
+  },
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.cursorStyle": "underline",
+  "editor.fontWeight": "normal"
+}
