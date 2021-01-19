@@ -1,6 +1,6 @@
 # Customize ZShell Layout
 
-1. `sh -c "\$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` _#Download Oh My Zsh_
+1. `sh -c "\$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"` _// Download Oh My Zsh_
 
 2. Installing FiraMono Nerd Font From GitHub
 
@@ -15,19 +15,19 @@
 
 4. Download Iterm Themes:
 
-   - git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git
+   - `git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git`
 
 5. Change Themes
 
    - Open iTerm2 > Profiles > Edit Profiles > Colors > Color Presets Drop Down > Import.
-   - In the import window, navigate to the “Schemes” folder _#from step 2_.
+   - In the import window, navigate to the “Schemes” folder _// from step 2_.
    - Select all the files so you can import all the color schemes at once.
    - Simply select whichever color scheme you like.
 
 6. Change Font:
 
    - Open iTerm2 > Profiles > Edit Profiles > Text > Font Drop Down.
-   - Select Meslo LG L DZ for Powerline
+   - Select FiraMono Nerd Fonts
 
 7. Install Syntax Highlighting Plugin and AutoSuggestion Plugin
 
@@ -212,7 +212,7 @@ prompt_git() {
   local PL_BRANCH_CHAR
   () {
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
-    PL_BRANCH_CHAR=""         # 
+    PL_BRANCH_CHAR="  "         # 
   }
   local ref dirty mode repo_path
 
@@ -240,8 +240,8 @@ prompt_git() {
     zstyle ':vcs_info:*' enable git
     zstyle ':vcs_info:*' get-revision true
     zstyle ':vcs_info:*' check-for-changes true
-    zstyle ':vcs_info:*' stagedstr '✚'
-    zstyle ':vcs_info:*' unstagedstr '±'
+    zstyle ':vcs_info:*' stagedstr ''
+    zstyle ':vcs_info:*' unstagedstr ''
     zstyle ':vcs_info:*' formats ' %u%c'
     zstyle ':vcs_info:*' actionformats ' %u%c'
     vcs_info
@@ -314,7 +314,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%~'
+  prompt_segment blue $CURRENT_FG '  %~'
 }
 
 # Virtualenv: current working virtualenv

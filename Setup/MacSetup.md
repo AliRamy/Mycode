@@ -1,21 +1,19 @@
 # How To Setup Your Mac For Code
 
-================================
-
 ## Change Shell to ZSH
 
-1. `chsh -s /bin/zsh` _#Changing The Shell Type_
-2. `which $SHELL` _#It should prompt /bin/zsh_
+1. `chsh -s /bin/zsh` _// Changing The Shell Type_
+2. `which $SHELL` _// It should prompt /bin/zsh_
 
 ## Install XCode Tools
 
-`sudo xcode-select --install` _#Then you have to install Xcode Feom AppStore_
+`sudo xcode-select --install` _// Then you have to install Xcode Feom AppStore_
 
 ## Install Homebrew
 
 1. `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
    [Homebrew Website](https://brew.sh/)
-2. `brew update` _#This updates Homebrew_
+2. `brew update` _// This updates Homebrew_
 
 ## Install Git
 
@@ -194,14 +192,14 @@ alias python=python3
 alias pip=pip3
 ```
 
-`pip freeze | grep virtualenv` _#to know virtualenvwrapper version_
+`pip freeze | grep virtualenv` _// to know virtualenvwrapper version_
 
 ## Install Java
 
 1. `brew cask install java`
 2. `wget https://download.java.net/java/GA/jdk14.0.1/664493ef4a6946b186ff29eb326336a2/7/GPL/openjdk-14.0.1_osx-x64_bin.tar.gz`
 3. `tar -xf openjdk-14.0.1_osx-x64_bin.tar.gz`
-4. `/usr/libexec/java_home -v 1.8` _#this is how to know wher java installed_
+4. `/usr/libexec/java_home -v 1.8` _// this is how to know wher java installed_
 5. `brew install maven`
 
 ## Exporting Java
@@ -238,7 +236,7 @@ export PATH="/usr/local/bin/npm:/usr/local/bin/node:/usr/local/bin:$PATH"
 ## Install TypeScript
 
 1. `npm install -g typescript`
-2. `tsc` _#type script compilier_
+2. `tsc` _// type script compilier_
 
 ## Install Flutter
 
