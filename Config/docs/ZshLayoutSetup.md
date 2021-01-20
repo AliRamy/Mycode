@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 
 8. `code edvardm.zsh-theme`
 9. Delete all the code and add the following code
-10. [Edvardm Theme File](/AwesomeZsh/themes/evardm.zsh-theme)
+10. [Edvardm Theme File](/AwesomeZsh/themes/edvardm.zsh-theme)
 
 11. `code jonathan.zsh-theme`
 12. Delete all the code and add the following code
