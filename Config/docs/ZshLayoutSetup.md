@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 1. `cd .oh-my-zsh/themes/`
 2. `code agnoster.zsh-theme` _// Open agnoster theme_
 3. Delet all code and add the following code
+4. [agnoster theme file](AwesomeZsh/themes/agnoster.zsh-theme)
 
 ```zsh
 # vim:ft=zsh ts=2 sw=2 sts=2
