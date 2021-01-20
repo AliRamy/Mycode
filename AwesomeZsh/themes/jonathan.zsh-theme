@@ -1,15 +1,3 @@
-PROMPT='%{$fg_bold[red]%} %{$fg_bold[green]%} %{$fg_bold[white]%}%c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
-
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%} %{$fg[yellow]%}%%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}"
-```
-
-1. `code jonathan.zsh-theme`
-2. Delete all the code and add the following code
-
-```bash
 functions rbenv_prompt_info >& /dev/null || rbenv_prompt_info(){}
 
 function theme_precmd {
@@ -40,8 +28,8 @@ function theme_precmd {
 setopt extended_glob
 theme_preexec () {
     if [[ "$TERM" == "screen" ]]; then
-    local CMD=${1[(wr)^(*=*|sudo|-*)]}
-    echo -n "\ek$CMD\e\\"
+        local CMD=${1[(wr)^(*=*|sudo|-*)]}
+        echo -n "\ek$CMD\e\\"
     fi
 }
 
@@ -58,35 +46,35 @@ setprompt () {
 
     autoload zsh/terminfo
     for color in RED GREEN YELLOW BLUE MAGENTA CYAN WHITE GREY; do
-    eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
-    eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
-    (( count = $count + 1 ))
+        eval PR_$color='%{$terminfo[bold]$fg[${(L)color}]%}'
+        eval PR_LIGHT_$color='%{$fg[${(L)color}]%}'
+        (( count = $count + 1 ))
     done
     PR_NO_COLOUR="%{$terminfo[sgr0]%}"
 
     ###
     # Modify Git prompt
-    ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
+    ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[red]%}    "
     ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-    ZSH_THEME_GIT_PROMPT_DIRTY=""
-    ZSH_THEME_GIT_PROMPT_CLEAN=""
+    ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}  "
+    ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[yellow]%} 烙 "
 
-    ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} 烙"
-    ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%}  "
-    ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖"
+    ZSH_THEME_GIT_PROMPT_ADDED=""
+    ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%}"
+    ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}  "
     ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} "
     ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
-    ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} "
+    ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}  "
 
     ###
     # See if we can use extended characters to look nicer.
     # UTF-8 Fixed
 
     if [[ $(locale charmap) == "UTF-8" ]]; then
-    PR_SET_CHARSET=""
-    PR_SHIFT_IN=""
-    PR_SHIFT_OUT=""
-    PR_HBAR="─"
+        PR_SET_CHARSET=""
+        PR_SHIFT_IN=""
+        PR_SHIFT_OUT=""
+        PR_HBAR="─"
         PR_ULCORNER="┌"
         PR_LLCORNER="└"
         PR_LRCORNER="┘"
@@ -125,9 +113,9 @@ setprompt () {
     ###
     # Decide whether to set a screen title
     if [[ "$TERM" == "screen" ]]; then
-    PR_STITLE=$'%{\ekzsh\e\\%}'
+        PR_STITLE=$'%{\ekzsh\e\\%}'
     else
-    PR_STITLE=''
+        PR_STITLE=''
     fi
 
 

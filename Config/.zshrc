@@ -6,13 +6,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Setting ZSH_THEME
 ZSH_THEME="agnoster"
-#ZSH_THEME="duellj"
-#ZSH_THEME="cloud"
 #ZSH_THEME="edvardm"
-#ZSH_THEME="apple"
 #ZSH_THEME="jonathan"
 #ZSH_THEME="intheloop"
-#ZSH_THEME="sonicradish"
 figlet "Let's Code"
 cowsay -f tux "Hello World!"
 
