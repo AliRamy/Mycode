@@ -70,53 +70,53 @@ Host *
 1. `pbcopy < ~/.ssh/<Name-of-Private-Keyfile>.pub`
 2. In the upper-right corner of any page, click your profile photo, then click Settings.
 
-   - ![Settings](images/Settings.png)
+   - ![Settings](/Config/images/Settings.png)
 
 3. In the user settings sidebar, click SSH and GPG keys.
 
-   - ![Settings](images/ssh-keys.png)
+   - ![Settings](/Config/images/ssh-keys.png)
 
 4. Click New SSH key or Add SSH key.
 
-   - ![Settings](images/add-ssh-key.png)
+   - ![Settings](/Config/images/add-ssh-key.png)
 
 5. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 6. Paste your key into the "Key" field.
 
-   - ![Settings](images/ssh-key-paste.png)
+   - ![Settings](/Config/images/ssh-key-paste.png)
 
 7. Click Add SSH key.
 
-   - ![Settings](images/ssh-add-key.png)
+   - ![Settings](/Config/images/ssh-add-key.png)
 
 8. If prompted, confirm your GitHub password.
-   - ![Settings](images/sudo_mode_popup.png)
+   - ![Settings](/Config/images/sudo_mode_popup.png)
 
 ## create a new repository on github
 
 1. In the upper-right corner of any page, use the drop-down menu, and select New repository.
 
-   - ![Settings](images/repo-create.png)
+   - ![Settings](/Config/images/repo-create.png)
 
 2. Type a short, memorable name for your repository. For example, "hello-world".
 
-   - ![Settings](images/create-repository-name.png)
+   - ![Settings](/Config/images/create-repository-name.png)
 
 3. Optionally, add a description of your repository. For example, "My first repository on GitHub."
 
-   - ![Settings](images/create-repository-desc.png)
+   - ![Settings](/Config/images/create-repository-desc.png)
 
 4. Choose a repository visibility. For more information, see "About repository visibility."
 
-   - ![Settings](images/create-repository-public-private.png)
+   - ![Settings](/Config/images/create-repository-public-private.png)
 
 5. Click Create repository.
 
-   - ![Settings](images/create-repository-button.png)
+   - ![Settings](/Config/images/create-repository-button.png)
 
 6. Copy the ssh address
 
-   - ![Settings](images/git.png)
+   - ![Settings](/Config/images/git.png)
 
 7. `git remote add origin git@github.com:AliRamy/hello-world.git`
 8. `git push origin master`
