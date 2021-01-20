@@ -183,15 +183,15 @@ prompt_segment() {
 }
 
 # End the prompt, closing any open segments
-prompt_end() {
-  if [[ -n $CURRENT_BG ]]; then
-    echo -n " %{{$CURRENT_BG}}$SEGMENT_SEPARATOR"
-  else
-    echo -n "%{%k%}"
-  fi
-  echo -n "%{%f%}"
-  CURRENT_BG=''
-}
+#prompt_end() {
+  #if [[ -n $CURRENT_BG ]]; then
+    #echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+  #else
+    #echo -n "%{%k%}"
+  #fi
+  #echo -n "%{%f%}"
+  ##CURRENT_BG=''
+#}
 
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
