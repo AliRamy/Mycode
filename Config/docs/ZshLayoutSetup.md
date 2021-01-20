@@ -104,10 +104,10 @@ source $ZSH/oh-my-zsh.sh
 ## Making Some Changes on oh-my-zsh themes
 
 1. `cd .oh-my-zsh/themes/`
-2. `code agnoster.zsh-theme` _#Open agnoster theme_
+2. `code agnoster.zsh-theme` _// Open agnoster theme_
 3. Delet all code and add the following code
 
-```bash
+```zsh
 # vim:ft=zsh ts=2 sw=2 sts=2
 #
 # agnoster's Theme - https://gist.github.com/3712874
@@ -183,15 +183,15 @@ prompt_segment() {
 }
 
 # End the prompt, closing any open segments
-#prompt_end() {
-  #if [[ -n $CURRENT_BG ]]; then
-    #echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
-  #else
-    #echo -n "%{%k%}"
-  #fi
-  #echo -n "%{%f%}"
-  ##CURRENT_BG=''
-#}
+prompt_end() {
+  if [[ -n $CURRENT_BG ]]; then
+    echo -n " %{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+  else
+    echo -n "%{%k%}"
+  fi
+  echo -n "%{%f%}"
+  CURRENT_BG=''
+}
 
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
@@ -332,7 +332,7 @@ prompt_virtualenv() {
 prompt_status() {
   local -a symbols
 
-  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}"
+  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}"
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}漣"
 
