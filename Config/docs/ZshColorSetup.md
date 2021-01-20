@@ -1,4 +1,4 @@
-# Customize ZShell Color
+# Customize Zsh Color
 
 ## Lovelace
 
