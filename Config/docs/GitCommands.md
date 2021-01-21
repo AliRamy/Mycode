@@ -1,4 +1,4 @@
-# Creating Snapshots
+# Git Commands
 
 ## Initializing a Repository
 
@@ -67,66 +67,67 @@ Host *
 
 ## Adding a new SSH key to your GitHub account
 
-1. `pbcopy < ~/.ssh/<Name-of-Private-Keyfile>.pub`
-2. In the upper-right corner of any page, click your profile photo, then click Settings.
+- `pbcopy < ~/.ssh/<Name-of-Private-Keyfile>.pub`
+- In the upper-right corner of any page, click your profile photo, then click Settings.
 
-   - ![Settings](/Config/images/Settings.png)
+![Settings](/Config/images/Settings.png)
 
-3. In the user settings sidebar, click SSH and GPG keys.
+- In the user settings sidebar, click SSH and GPG keys.
 
-   - ![Settings](/Config/images/ssh-keys.png)
+![Settings](/Config/images/ssh-keys.png)
 
-4. Click New SSH key or Add SSH key.
+- Click New SSH key or Add SSH key.
 
-   - ![Settings](/Config/images/add-ssh-key.png)
+![Settings](/Config/images/add-ssh-key.png)
 
-5. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
-6. Paste your key into the "Key" field.
+- In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+- Paste your key into the "Key" field.
 
-   - ![Settings](/Config/images/ssh-key-paste.png)
+![Settings](/Config/images/ssh-key-paste.png)
 
-7. Click Add SSH key.
+- Click Add SSH key.
 
-   - ![Settings](/Config/images/ssh-add-key.png)
+![Settings](/Config/images/ssh-add-key.png)
 
-8. If prompted, confirm your GitHub password.
-   - ![Settings](/Config/images/sudo_mode_popup.png)
+- If prompted, confirm your GitHub password.
 
-## create a new repository on github
+![Settings](/Config/images/sudo_mode_popup.png)
 
-1. In the upper-right corner of any page, use the drop-down menu, and select New repository.
+## Create a new repository on github
 
-   - ![Settings](/Config/images/repo-create.png)
+- In the upper-right corner of any page, use the drop-down menu, and select New repository.
 
-2. Type a short, memorable name for your repository. For example, "hello-world".
+![Settings](/Config/images/repo-create.png)
 
-   - ![Settings](/Config/images/create-repository-name.png)
+- Type a short, memorable name for your repository. For example, "hello-world".
 
-3. Optionally, add a description of your repository. For example, "My first repository on GitHub."
+![Settings](/Config/images/create-repository-name.png)
 
-   - ![Settings](/Config/images/create-repository-desc.png)
+- Optionally, add a description of your repository. For example, "My first repository on GitHub."
 
-4. Choose a repository visibility. For more information, see "About repository visibility."
+![Settings](/Config/images/create-repository-desc.png)
 
-   - ![Settings](/Config/images/create-repository-public-private.png)
+- Choose a repository visibility. For more information, see "About repository visibility."
 
-5. Click Create repository.
+![Settings](/Config/images/create-repository-public-private.png)
 
-   - ![Settings](/Config/images/create-repository-button.png)
+- Click Create repository.
 
-6. Copy the ssh address
+![Settings](/Config/images/create-repository-button.png)
 
-   - ![Settings](/Config/images/git.png)
+- Copy the ssh address
 
-7. `git remote add origin git@github.com:AliRamy/hello-world.git`
-8. `git push origin master`
+![Settings](/Config/images/git.png)
+
+- `git remote add origin git@github.com:AliRamy/hello-world.git`
+- `git push origin master`
 
 ## Create a new repository on the command line
 
-1. `echo "# Repository_Name" >> README.md`
-2. `git init`
-3. `git add README.md`
-4. `git commit -m "first commit"`
-5. `git branch -M main` or `git branch -M master`
-6. `git remote add origin git@github.com:username/Repository_Name.git`
-7. `git push -u origin main` or `git push origin master`
+- `echo "# Repository_Name" >> README.md`
+- `git init`
+- `git add README.md`
+- `git commit -m "first commit"`
+- `git branch -M main` or `git branch -M master`
+- `git remote add origin git@github.com:username/Repository_Name.git`
+- `git push -u origin main` or `git push origin master`

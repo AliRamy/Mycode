@@ -168,6 +168,7 @@ Picture in Picture
 1. `sudo pip3 install virtualenvwrapper`
 2. `sudo pip3 install virtualenv`
 3. `python3.8 -m pip install pipenv`
+4. `pip freeze | grep virtualenv` _// to know virtualenvwrapper version_
 
 ## Exporting Python Interpreter
 
@@ -191,8 +192,6 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 alias python=python3
 alias pip=pip3
 ```
-
-`pip freeze | grep virtualenv` _// to know virtualenvwrapper version_
 
 ## Install Java
 
@@ -243,7 +242,7 @@ export PATH="/usr/local/bin/npm:/usr/local/bin/node:/usr/local/bin:$PATH"
 1. `git clone https://github.com/flutter/flutter.git -b stable`
 2. `flutter doctor`
 3. `flutter precache`
-4. For more details to install IOS Simulator and Andriod Emulator on [Flutter Docs](https://flutter.dev/docs/get-started/install/macos)
+4. For more details to install IOS Simulator and Andriod Emulator go to [Flutter Docs](https://flutter.dev/docs/get-started/install/macos)
 
 ## Exporting Flutter
 
