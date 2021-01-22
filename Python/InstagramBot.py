@@ -1,8 +1,8 @@
+#!/bin/python3
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-
-
 class InstagramBot:
     def __init__(self, usrename, password, anotherusername, message):
         self.username = usrename
@@ -57,9 +57,9 @@ class InstagramBot:
         time.sleep(10)
         bot.quit()
 
-
-message = input('Input Your Message:\n')
-email = input('Input The Acount You Want To Send Message To:\n')
-ali = InstagramBot('bottosayhello', 'AliRamy12345@#$', email, message)
-ali.login()
-ali.makechat()
+if __name__ == '__main__':
+    message = input('Input Your Message:\n')
+    email = input('Input The Acount You Want To Send Message To:\n')
+    instagrambot = InstagramBot('bottosayhello', 'AliRamy12345@#$', email, message)
+    instagrambot.login()
+    instagrambot.makechat()
