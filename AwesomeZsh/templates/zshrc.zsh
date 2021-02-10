@@ -9,7 +9,7 @@ ZSH_THEME="agnoster" #Done
 #ZSH_THEME="edvardm" #Done
 #ZSH_THEME="intheloop" #Done
 #ZSH_THEME="jonathan" #Done
-figlet "Let's Code"
+figlet "Let's Code" | lolcat
 cowsay -f tux "Hello World!"
 
 #Exporting Node and NVM
