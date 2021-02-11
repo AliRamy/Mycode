@@ -31,8 +31,8 @@
 
 7. Install Syntax Highlighting Plugin and AutoSuggestion Plugin
 
-   - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-   - `git clone https://github.com/zsh-users/zsh-autosuggestions \$ZSH_CUSTOM/plugins/zsh-autosuggestions`
+   - `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+   - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
 
 8. Add the following code to .zshrc
 
@@ -106,20 +106,20 @@ source $ZSH/oh-my-zsh.sh
 1. `cd .oh-my-zsh/themes/`
 2. `code agnoster.zsh-theme` _// Open agnoster theme_
 3. Delet all code and add the following code
-4. [Agnoster Theme File](/AwesomeZsh/themes/agnoster.zsh-theme)
+4. [Agnoster Theme File](/AwesomeZsh/themes/agnoster.zsh)
 
 5. `code cloud.zsh-theme`
 6. Delete all the code and add the following code
-7. [Cloud Theme File](/AwesomeZsh/themes/cloud.zsh-theme)
+7. [Cloud Theme File](/AwesomeZsh/themes/cloud.zsh)
 
 8. `code edvardm.zsh-theme`
 9. Delete all the code and add the following code
-10. [Edvardm Theme File](/AwesomeZsh/themes/edvardm.zsh-theme)
+10. [Edvardm Theme File](/AwesomeZsh/themes/edvardm.zsh)
 
 11. `code jonathan.zsh-theme`
 12. Delete all the code and add the following code
-13. [Jonathan Theme File](/AwesomeZsh/themes/jonathan.zsh-theme)
+13. [Jonathan Theme File](/AwesomeZsh/themes/jonathan.zsh)
 
 14. `code intheloop.zsh-theme`
 15. Delete all the code and add the following code
-16. [Intheloop Theme File](/AwesomeZsh/themes/intheloop.zsh-theme)
+16. [Intheloop Theme File](/AwesomeZsh/themes/intheloop.zsh)
