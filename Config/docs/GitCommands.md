@@ -1,51 +1,194 @@
-# Git Commands
+# Git
 
-## Initializing a Repository
+## Creating Snapshots
 
-- `git init`
+### Initializing a Repository
 
-## Staging Files
+`git init`
 
-- `git add <File-Name>`
-- `git add .`
+### Git Configuration
 
-## Viewing The Status
+`git config --global user.name "Ali Ramy"` _# Define the user name_
 
-- `git status`
-- `git status -s`
+`git config --global user.email aliramy772004@gmail.com` _# Define the user email_
 
-## Committing The Staged Files
+`git config --global core.editor "code --wait"` _# Define thre default editor_
 
-- `git commit -m "Message"`
-- `git commit -a -m "Message"`
-- `git commmit`
+`git config --global -e` _# Open the config file_
 
-## Removing Files
+`git config --global core.autocrlf input`
 
-- `git rm <File-Name>`
-- `git rm --cached <File-Name>` _// Removes from staging area only_
-- `git rm <Folder-Name> -r`
-- `git rm <Folder-Name> -r` _// Removes from staging area only_
+### Staging Files
 
-## Renaming or Moving Files
+`git add file1.js` _# Stages a single file_
 
-- `git mv <Old-File-Name> <New-File-Name>`
+`git add file1.js` file2.js _# Stages multiple files_
 
-## Viewing The Staged / Unstaged Changes
+`git add *.js` _# Stages with a pattern_
 
-- `git diff` _**// Shows unstaged changes**_
-- `git diff --staged` _// Shows unstaged changes_
-- `git diff --cached` _// Shows unstaged changes_
+`git add .` _# Stages the current directory and all its content_
 
-## Viewing The History
+### Viewing The Status
 
-- `git log` _// Full History_
-- `git log --oneline` _// Summary History_
-- `git log --reverse` _// Lists the commits from the oldest to the newest_
+`git status` _# Full status_
 
-## Unstaging Files (Undoing git add)
+`git status -s` _# Short status_
 
-- `git restore --staged <File-Name>` _// Copies the last version of file.js from repo to index_
+### Committing The Staged Files
+
+`git commit -m “Message”` _# Commits with a one-line message_
+
+`git commit` _# Opens the default editor to type a long message_
+
+### Skipping The Staging Area
+
+`git commit -am “Message”`
+
+### Removing Files
+
+`git rm file1.js` _# Removes from working directory and staging area_
+
+`git rm --cached file1.js` _# Removes from staging area only_
+
+### Renaming or Moving Files
+
+`git mv file1.js file1.txt`
+
+### Viewing The Staged/Unstaged Changes
+
+`git diff` _# Shows unstaged changes_
+
+`git diff --staged` _# Shows staged changes_
+
+`git diff --cached` _# Shows staged changes_
+
+### Viewing The History
+
+`git log` _# Full history_
+
+`git log --oneline` _# Summary_
+
+`git log --reverse` _# Lists the commits from the oldest to the newest_
+
+### Viewing a Commit
+
+`git show [CommitName]` _# Shows the given commit_
+
+### Unstaging Files _(Undoing `git add`)_
+
+`git restore --staged file.js` _# Copies the last version of file.js from repo to index_
+
+### Discarding Local Changes
+
+`git restore file.js` _# Copies file.js from index to working directory_
+
+`git restore file1.js file2.js` _# Restores multiple files in working directory_
+
+`git restore .` _# Discards all local changes (except untracked files)_
+
+`git clean -fd` _# Removes all untracked files_
+
+### Restoring an Earlier Version of a File
+
+`git restore --source=HEAD~2 file.js`
+
+## Browsing History
+
+### Viewing the History
+
+`git log --stat` _# Shows the list of modified files_
+
+`git log --patch` _# Shows the actual changes (patches)_
+
+### Creating an Alias
+
+`git config --global alias.lg “log --oneline"` _# Make lg alias for log --online_
+
+### Finding Contributors
+
+`git shortlog`
+
+### Viewing The History of a File
+
+`git log file.txt` _# Shows the commits that touched file.txt_
+
+`git log --stat file.txt` _# Shows statistics (the number of changes) for file.txt_
+
+`git log --patch file.txt` _# Shows the patches (changes) applied to file.txt_
+
+### Finding The Author of Lines
+
+`git blame file.txt` _# Shows the author of each line in file.txt_
+
+### Tagging
+
+`git tag v1.0` _# Tags the last commit as v1.0_
+
+`git tag v1.0 5e7a828` _# Tags an earlier commit_
+
+`git tag` _# Lists all the tags_
+
+`git tag -d v1.0` _# Deletes the given tag_
+
+## Branching & Merging
+
+### Managing Branches
+
+`git branch [Branch Name]` _# Creates a new branch_
+
+`git checkout [Branch Name]` _# Switches to a branch_
+
+`git switch [Branch Name]` _# Switches to a branch_
+
+`git switch -C [Branch Name]` _# Creates and switches_
+
+`git branch -d [Branch Name]` _# Deletes a branch_
+
+### Comparing Branches
+
+`git log master..bugfix` _# Lists the commits in the bugfix branch not in master_
+
+`git diff master..bugfix` _# Shows the summary of changes_
+
+### Stashing
+
+`git stash push -m “New tax rules” list` _# Creates a new stash_
+
+`git stash list` _# Lists all the stashes_
+
+`git stash show stash@{1}` _# Shows the given stash_
+
+`git stash show 1` _# shortcut for stash@{1}_
+
+`git stash apply 1` _# Applies the given stash to the working dir_
+
+`git stash drop 1` _# Deletes the given stash_
+
+`git stash clear` _# Deletes all the stashes_
+
+### Merging
+
+`git merge example` _# Merges the example branch into the current branch_
+
+`git merge --no-ff example` _# Creates a merge commit even if FF is possible_
+
+`git merge --squash bugfix` _# Performs a squash merge_
+
+`git merge --abort` _# Aborts the merge_
+
+### Viewing the merged branches
+
+`git branch --merged` _# Shows the merged branches_
+
+`git branch --no-merged` _# Shows the unmerged branches_
+
+### Rebasing
+
+`git rebase master` _# Changes the base of the current branch_
+
+### Cherry picking
+
+`git cherry-pick dad47ed` _# Applies the given commit on the current branch_
 
 ## Generating a New SSH key
 

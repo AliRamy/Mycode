@@ -1,13 +1,13 @@
 # Install NeoVim
 
-1. `brew install neovim` _// Install Neovim_
-2. `mkdir ~/.config/nvim` _// Make directory for your Neovim config_
-3. `touch ~/.config/nvim/init.vim` _// Create an init.vim file_
+1. `brew install neovim` _# Install Neovim_
+2. `mkdir ~/.config/nvim` _# Make directory for your Neovim config_
+3. `touch ~/.config/nvim/init.vim` _# Create an init.vim file_
 4. Install vim-plug
 
-   - `curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegun vim-plug/master/plug.vim` _// You should now have plug.vim in your autoload directory so it will load of on start_
-   - `mkdir ~/.config/nvim/vim-plug` _// Make directory for plugins_
-   - `touch ~/.config/nvim/vim-plug/plugins.vim` _// Make file for plugins_
+   - `curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegun vim-plug/master/plug.vim` _# You should now have plug.vim in your autoload directory so it will load of on start_
+   - `mkdir ~/.config/nvim/vim-plug` _# Make directory for plugins_
+   - `touch ~/.config/nvim/vim-plug/plugins.vim` _# Make file for plugins_
    - Add the following code to your `~/.config/nvim/vim-plug/plugins.vim`
 
    ```vim
@@ -30,7 +30,7 @@
    call plug#end()
    ```
 
-   - Source the file in `~/.config/nvim/init.vim` _// Like my init.vim file_
+   - Source the file in `~/.config/nvim/init.vim` _# Like my init.vim file_
    - Add the following code to `init.vim`
 
    ```vim
@@ -38,13 +38,13 @@
    ```
 
    - Open nvim with `nvim` command
-   - Click `Shift + ;` _// Open the command mode_
-   - `:PlugInstall` _// Insatll all the plugins_
+   - Click `Shift + ;` _# Open the command mode_
+   - `:PlugInstall` _# Insatll all the plugins_
 
 5. General Setings
 
-   - `mkdir ~/.config/nvim/general` _// Make directory for general settings_
-   - `touch ~/.config/nvim/general/settings.vim` _// Make file for settings_
+   - `mkdir ~/.config/nvim/general` _# Make directory for general settings_
+   - `touch ~/.config/nvim/general/settings.vim` _# Make file for settings_
    - Add the following code to your `~/.config/nvim/general/settings.vim`
 
    ```vim
@@ -91,12 +91,12 @@
    cmap w!! w !sudo tee %
    ```
 
-   - Source the file in `~/.config/nvim/init.vim` _// Like my init.vim file_
+   - Source the file in `~/.config/nvim/init.vim` _# Like my init.vim file_
 
 6. Mapping new keys
 
-   - `mkdir ~/.config/nvim/keys` _// Make directory for mapping keys_
-   - `touch ~/.config/nvim/keys/mappings.vim` _// Make file for mapping_
+   - `mkdir ~/.config/nvim/keys` _# Make directory for mapping keys_
+   - `touch ~/.config/nvim/keys/mappings.vim` _# Make file for mapping_
    - Add the following code to your `~/.config/nvim/keys/mapping.vim`
 
    ```vim
@@ -146,14 +146,14 @@
    nnoremap <Leader>O O<Esc>^Da
    ```
 
-   - Source the file in `~/.config/nvim/init.vim` _// Like my init.vim file_
+   - Source the file in `~/.config/nvim/init.vim` _# Like my init.vim file_
 
 7. Get healthy
 
    - Open nvim with `nvim` command
-   - Click `Shift + ;` _// Open the command mode_
-   - `:checkhealth` _// o see copy/paste and python and node setup_
-   - On mac `pbcopy` should be builtin _// Support for copy/paste_
+   - Click `Shift + ;` _# Open the command mode_
+   - `:checkhealth` _# o see copy/paste and python and node setup_
+   - On mac `pbcopy` should be builtin _# Support for copy/paste_
    - On Ubuntu
      - `sudo apt install xsel`
    - On Arch Linux
@@ -162,7 +162,7 @@
      - `pip install pynvim`
    - Neovim node support
      - `npm i -g neovim`
-   - `touch ~/.config/nvim/general/paths.vim` _// Make file for paths_
+   - `touch ~/.config/nvim/general/paths.vim` _# Make file for paths_
    - Add the following code to your `~/.config/nvim/general/paths.vim`
 
    ```vim
@@ -182,8 +182,8 @@
    ```
 
    - Make sure to run `:PlugInstall` after add any plug
-   - `mkdir ~/.config/nvim/themes` _// Make themes directory_
-   - `touch ~/.config/nvim/themes/onedark.vim` _// Make file for theme_
+   - `mkdir ~/.config/nvim/themes` _# Make themes directory_
+   - `touch ~/.config/nvim/themes/onedark.vim` _# Make file for theme_
    - Add the following code to your `~/.config/nvim/themes/onedark.vim`
 
    ```vim
@@ -212,7 +212,7 @@
    endif
    ```
 
-   - Source the file in `~/.config/nvim/init.vim` _// Like my init.vim file_
+   - Source the file in `~/.config/nvim/init.vim` _# Like my init.vim file_
 
 9. Conquerer of Completion COC
 
@@ -224,8 +224,8 @@
    ```
 
    - Make sure to run `:PlugInstall` after add any plug
-   - `mkdir ~/.config/nvim/plug-config` _// make plug-config directory_
-   - `touch ~/.config/nvim/plug-config/coc.vim` _// make file for coc_
+   - `mkdir ~/.config/nvim/plug-config` _# make plug-config directory_
+   - `touch ~/.config/nvim/plug-config/coc.vim` _# make file for coc_
    - Add the following code to your `~/.config/nvim/plug-config/coc.vim`
 
    ```vim
@@ -392,9 +392,9 @@
    nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
    ```
 
-   - Source the file in `~/.config/nvim/init.vim` _// Like my init.vim file_
+   - Source the file in `~/.config/nvim/init.vim` _# Like my init.vim file_
    - Open nvim with `nvim` command
-   - Click `Shift + ;` _// Open the command mode_
+   - Click `Shift + ;` _# Open the command mode_
    - `:CocInstall` coc-angular coc-clangd coc-css coc-flutter coc-git coc-go coc-html coc-java coc-python coc-omnisharp coc-rome coc-sql coc-svg coc-xml coc-marketplace
    - [Coc extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
    - `:CocConfig` will open `~/.config/nvim/coc-settings.json`
@@ -464,12 +464,12 @@
     set noshowmode
     ```
 
-    - Source the file in `~/.config/nvim/init.vim` _// Like my init.vim file_
+    - Source the file in `~/.config/nvim/init.vim` _# Like my init.vim file_
 
 12. Install coc-explorer
 
     - Open nvim with `nvim` command
-    - Click `Shift + ;` _// Open the command mode_
+    - Click `Shift + ;` _# Open the command mode_
     - `:CocInstall` coc-explorer
     - `:CocConfig` will open `~/.config/nvim/coc-settings.json`
     - Add the following code to your `~/.config/nvim/coc-settings.json`
