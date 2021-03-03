@@ -110,6 +110,10 @@ Go to `Prefrences` > `Appearance` > `General` > `Theme` > `Minimal`
    - JavaScript
    - TypeScript
    - React Extension Pack
+   - vue
+   - Vue 3 Snippets
+   - Vetur
+   - Angular Essentials
    - React Native Tools
    - Dart
    - Flutter
