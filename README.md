@@ -379,7 +379,7 @@ Simply select whichever color scheme you like.
 
 Open iTerm2 > `Profiles` > `Edit Profiles` > `Text` > `Font Drop Down`.
 
-Select FiraCode Nerd Fonts
+Select JetBrains Mono
 
 ### Install Syntax Highlighting Plugin and Auto Suggestion Plugin
 
@@ -1284,54 +1284,54 @@ Host *
 - `pbcopy < ~/.ssh/<Name-of-Private-Keyfile>.pub`
 - In the upper-right corner of any page, click your profile photo, then click Settings.
 
-![Settings](/Config/images/Settings.png)
+![Settings](./.config/images/Settings.png)
 
 - In the user settings sidebar, click SSH and GPG keys.
 
-![Settings](/Config/images/ssh-keys.png)
+![Settings](./.config/images/ssh-keys.png)
 
 - Click New SSH key or Add SSH key.
 
-![Settings](/Config/images/add-ssh-key.png)
+![Settings](./.config/images/add-ssh-key.png)
 
 - In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 - Paste your key into the "Key" field.
 
-![Settings](/Config/images/ssh-key-paste.png)
+![Settings](./.config/images/ssh-key-paste.png)
 
 - Click Add SSH key.
 
-![Settings](/Config/images/ssh-add-key.png)
+![Settings](./.config/images/ssh-add-key.png)
 
 - If prompted, confirm your GitHub password.
 
-![Settings](/Config/images/sudo_mode_popup.png)
+![Settings](./.config/images/sudo_mode_popup.png)
 
 ## Create a new repository on github
 
 - In the upper-right corner of any page, use the drop-down menu, and select New repository.
 
-![Settings](/Config/images/repo-create.png)
+![Settings](./.config/images/repo-create.png)
 
 - Type a short, memorable name for your repository. For example, "hello-world".
 
-![Settings](/Config/images/create-repository-name.png)
+![Settings](./.config/images/create-repository-name.png)
 
 - Optionally, add a description of your repository. For example, "My first repository on GitHub."
 
-![Settings](/Config/images/create-repository-desc.png)
+![Settings](./.config/images/create-repository-desc.png)
 
 - Choose a repository visibility. For more information, see "About repository visibility."
 
-![Settings](/Config/images/create-repository-public-private.png)
+![Settings](./.config/images/create-repository-public-private.png)
 
 - Click Create repository.
 
-![Settings](/Config/images/create-repository-button.png)
+![Settings](./.config/images/create-repository-button.png)
 
 - Copy the ssh address
 
-![Settings](/Config/images/git.png)
+![Settings](./.config/images/git.png)
 
 - `git remote add origin git@github.com:AliRamy/hello-world.git`
 - `git push origin master`
